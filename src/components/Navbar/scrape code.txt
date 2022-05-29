@@ -1,0 +1,314 @@
+// Carousel
+
+const contentStyle1 = {
+  height: '600px',
+  color: 'white',
+  lineHeight: '560px',
+  textAlign: 'center',
+  background: "url(" + "https://images.pexels.com/photos/5118522/pexels-photo-5118522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" + ")",
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+ 
+  fontWeight:'bold'
+};
+const contentStyle2 = {
+  height: '600px',
+  color: '#ccc',
+  lineHeight: '560px',
+  textAlign: 'center',
+  background: "url(" + "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg" + ")",
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+
+};
+const contentStyle3 = {
+  height: '600px',
+  color: '#ccc',
+  lineHeight: '560px',
+  textAlign: 'center',
+  background: "url(" + "https://images.pexels.com/photos/1319829/pexels-photo-1319829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" + ")",
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+
+};
+const contentStyle4 = {
+  height: '600px',
+  color: '#ccc',
+  lineHeight: '560px',
+  textAlign: 'center',
+  background: "url(" + "https://images.pexels.com/photos/701016/pexels-photo-701016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" + ")",
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+
+};
+
+
+
+<Carousel autoplay autoplaySpeed={2000}>
+<div>
+  <h3 style={contentStyle1}>ENJOY THE JOURNEY</h3>
+</div>
+<div>
+  <h3 style={contentStyle2}>ENJOY THE JOURNEY</h3>
+</div>
+<div>
+  <h3 style={contentStyle3}>ENJOY THE JOURNEY</h3>
+</div>
+<div>
+  <h3 style={contentStyle4}>ENJOY THE JOURNEY</h3>
+</div>
+</Carousel>
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+// Navbar
+
+function Navbar () {
+	return <div className="Navbar">
+	<nav class="navbar1">
+      <div class="navbar-container1 container1">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><Link className="a" to="/">Home</Link></li>
+          <li><Link className="a" to="/about">About</Link></li>
+          <button><Link className="a" to="/contact">Contact</Link></button>
+        </ul>
+        <h1 class="logo">Tourist Site</h1>
+      </div>
+    </nav>
+    
+	</div>
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif!important;
+}
+
+.html {
+  font-size: 62.5%!important;
+}
+
+.navbar1 input[type="checkbox"],
+.navbar1 .hamburger-lines {
+  display: none;
+}
+
+.container1 {
+  max-width: 1200px!important;
+  width: 90%;
+  margin: auto!important;
+  
+}
+
+.navbar1 {
+  
+  width: 100%;
+  background: #24252a;
+  color: #fff;
+}
+
+.navbar-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+  margin-top: 17px!important;
+}
+.logo {
+  order: 1;
+  font-size: 1.8rem;
+  margin-top: 17px!important;
+  color:#fff;
+}
+
+.menu-items li,
+button {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar1 .a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+button {
+  padding: 8px 19px;
+  margin-right: 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 0s;
+}
+
+button:hover .a {
+  color: #0088a9;
+}
+
+button:hover {
+  background: #fff;
+  color: #0088a9;
+}
+
+.navbar1 .a:hover {
+  color: #0088a9;
+}
+
+@media (max-width: 768px) {
+    .Navbar{
+       margin-top: -15px!important;
+    }
+  .navbar-container1 input[type="checkbox"],
+  .navbar-container1 .hamburger-lines {
+    display: block;
+    
+  }
+
+  .navbar-container1 {
+    display: block;
+    position: relative;
+    height: 68px;
+    
+  }
+
+  .navbar-container1 input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container1 .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-container1 .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .navbar-container1 .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container1 .hamburger-lines .line2 {
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .navbar-container1 .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar1 .menu-items {
+    padding-top: 100px;
+    background: #24252a;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    overflow: scroll;
+  }
+
+  .navbar1 .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  button {
+    width: fit-content;
+    margin-left: 1rem;
+  }
+
+  .logo {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 1.7rem;
+  }
+
+  .navbar-container1 input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-container1 input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
+}
