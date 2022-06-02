@@ -26,7 +26,7 @@ const myStyle4={
     return (
     <div className="Home">
 <div>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" data-interval="2000" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -36,7 +36,7 @@ const myStyle4={
 
   <div class="carousel-item active">
       <img class="d-block w-100" src="https://images.pexels.com/photos/887828/pexels-photo-887828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Second slide" />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <h3>Travel With Your Friends</h3>
     <p>With All Camping Facilities</p>
   </div>
@@ -44,7 +44,7 @@ const myStyle4={
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="https://images.pexels.com/photos/5064662/pexels-photo-5064662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="First slide" />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <h3>Travel With Your Friends</h3>
     <p>With All Camping Facilities</p>
   </div>   
@@ -52,7 +52,7 @@ const myStyle4={
 
     <div class="carousel-item">
       <img class="d-block w-100" src="https://images.pexels.com/photos/1319829/pexels-photo-1319829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Third slide" />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <h3>Travel With Your Friends</h3>
     <p>With All Camping Facilities</p>
   </div>
@@ -60,14 +60,14 @@ const myStyle4={
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Third slide" />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <h3>Travel With Your Friends</h3>
     <p>With All Camping Facilities</p>
   </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="https://images.pexels.com/photos/701016/pexels-photo-701016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Third slide" />
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
       <h3>Travel With Your Friends</h3>
     <p>With All Camping Facilities</p>
   </div>
